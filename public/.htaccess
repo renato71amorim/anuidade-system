@@ -1,0 +1,5 @@
+# Bloqueia acesso direto a arquivos PHP
+<FilesMatch "\.(php|sql)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
